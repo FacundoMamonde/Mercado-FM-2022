@@ -1,0 +1,116 @@
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: rgb(221, 221, 221);
+}
+
+#main-container {
+  display: block;
+  width: 590px;
+  margin: auto;
+}
+
+/* -------- NAV BAR -------- */
+#navbar {
+  font-size: 18px;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+#navbar-extra {
+  width: 185px;
+  display: block;
+}
+
+#navbar-user {
+  width: 110px;
+  text-align: right;
+  cursor: pointer;
+}
+
+#navbar-extra:hover {
+  color: red;
+  cursor: pointer;
+}
+
+#navbar-extra span {
+  vertical-align: top;
+}
+
+#navbar button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+#navbar button:hover {
+  color: grey;
+}
+
+/* -------- LOGO -------- */
+
+#LOGO {
+  font-family: "Quicksand", sans-serif;
+  font-size: 42px;
+  margin-top: 2px;
+  margin-bottom: -12px;
+  text-align: center;
+}
+
+/* -------- BANNER -------- */
+
+#banner {
+  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#bannerimg {
+  height: 90px;
+}
+
+#bannertext {
+  font-style: oblique;
+  font-size: 18px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+/* -------- INVENTARIO -------- */
+h3 {
+  text-align: center;
+}
+
+table {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+#inventario {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sinBullet {
+  list-style-type: none;
+}
+
+.bulletCirculo {
+  list-style-type: circle;
+  margin-left: -20px;
+}
+
+/* -------- PIE DE PAGINA -------- */
+
+#pie {
+  font-style: oblique;
+  color: grey;
+  text-align: center;
+}

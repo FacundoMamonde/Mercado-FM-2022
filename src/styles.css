@@ -1,12 +1,15 @@
 body {
   font-family: "Quicksand", sans-serif;
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(209, 209, 209);
+  margin-top: 0px;
 }
 
 #main-container {
   display: block;
-  width: 590px;
+  max-width: 1200px;
   margin: auto;
+  min-width: 660;
+  text-align: center;
 }
 
 /* -------- NAV BAR -------- */
@@ -15,8 +18,11 @@ body {
   border: none;
   display: flex;
   flex-direction: row;
-  margin-top: 15px;
+  margin: 0px;
   justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.144);
+  padding: 10px;
+  border-bottom: rgba(0, 0, 0, 0.403) solid 1px;
 }
 
 #navbar-extra {
@@ -57,9 +63,19 @@ body {
 #LOGO {
   font-family: "Quicksand", sans-serif;
   font-size: 42px;
-  margin-top: 2px;
-  margin-bottom: -12px;
+  padding: 10px;
+  margin-top: -0px;
+  margin-bottom: 0px;
   text-align: center;
+  background-color: rgba(128, 128, 128, 0.664);
+  border-bottom: rgba(0, 0, 0, 0) solid 1px;
+}
+
+#LOGO span {
+  color: rgba(29, 29, 29, 0.671);
+  font-size: 42px;
+  filter: drop-shadow(0px 5px 4px #00000069);
+  vertical-align: -5px;
 }
 
 /* -------- BANNER -------- */
@@ -82,7 +98,13 @@ body {
   margin-right: 20px;
 }
 
-/* -------- INVENTARIO -------- */
+/* -------- PRODUCTOS - INVENTARIO -------- */
+#productos {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: rgba(128, 128, 128, 0.144);
+}
+
 h3 {
   text-align: center;
 }
@@ -113,6 +135,9 @@ table {
   font-style: oblique;
   color: grey;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  background-color: rgba(128, 128, 128, 0.027);
 }
 
 /* -------- EXTRAS -------- */

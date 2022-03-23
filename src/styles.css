@@ -2,13 +2,15 @@ body {
   font-family: "Quicksand", sans-serif;
   background-color: rgb(209, 209, 209);
   margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 #main-container {
   display: block;
   max-width: 1200px;
-  margin: auto;
   min-width: 660;
+  margin: auto;
   text-align: center;
 }
 
@@ -39,6 +41,7 @@ body {
 #navbar-extra:hover {
   color: red;
   cursor: pointer;
+  text-decoration: underline;
 }
 
 #navbar-extra span {
@@ -58,17 +61,26 @@ body {
   color: grey;
 }
 
+/* -------- LOGO Y  BANNER-------- */
+
+#LOGOyBanner {
+  display: flex;
+  flex-direction: row;
+}
+
 /* -------- LOGO -------- */
 
 #LOGO {
   font-family: "Quicksand", sans-serif;
   font-size: 42px;
   padding: 10px;
-  margin-top: -0px;
+  margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
   background-color: rgba(128, 128, 128, 0.664);
   border-bottom: rgba(0, 0, 0, 0) solid 1px;
+  max-width: 1300px;
+  min-width: 400px;
 }
 
 #LOGO span {
@@ -89,6 +101,8 @@ body {
 
 #bannerimg {
   height: 90px;
+  max-width: 100%;
+  min-width: 90;
 }
 
 #bannertext {
@@ -127,6 +141,7 @@ table {
 .bulletCirculo {
   list-style-type: circle;
   margin-left: -20px;
+  text-align: left;
 }
 
 /* -------- PIE DE PAGINA -------- */

@@ -9,7 +9,7 @@ body {
 #main-container {
   display: block;
   max-width: 1200px;
-  min-width: 660;
+  min-width: 500;
   margin: auto;
   text-align: center;
 }
@@ -63,24 +63,29 @@ body {
 
 /* -------- LOGO Y  BANNER-------- */
 
-#LOGOyBanner {
+#LOGOBanner {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  width: 100%;
 }
 
 /* -------- LOGO -------- */
 
 #LOGO {
+  height: 80px;
+  flex-grow: 1;
+}
+
+#LOGO h1 {
   font-family: "Quicksand", sans-serif;
   font-size: 42px;
-  padding: 10px;
+  padding: 13px;
   margin-top: 0px;
   margin-bottom: 0px;
   text-align: center;
   background-color: rgba(128, 128, 128, 0.664);
   border-bottom: rgba(0, 0, 0, 0) solid 1px;
-  max-width: 1300px;
-  min-width: 400px;
+  min-width: 480px;
 }
 
 #LOGO span {
@@ -93,23 +98,24 @@ body {
 /* -------- BANNER -------- */
 
 #banner {
-  display: block;
   display: flex;
   flex-direction: row;
+  margin: 0px;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 #bannerimg {
-  height: 90px;
-  max-width: 100%;
-  min-width: 90;
+  max-height: 80px;
+  max-width: 260px;
 }
 
 #bannertext {
   font-style: oblique;
   font-size: 18px;
-  text-align: right;
-  margin-right: 20px;
+  text-align: left;
+  margin-left: 20px;
+  max-width: 198px;
 }
 
 /* -------- PRODUCTOS - INVENTARIO -------- */

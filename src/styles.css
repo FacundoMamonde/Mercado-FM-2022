@@ -120,6 +120,20 @@ body {
   max-width: 198px;
 }
 
+/* -------- NAV BAR BOTTOM -------- */
+
+#navbar-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: rgb(226, 226, 226);
+}
+
+#navbar-bottom p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /* -------- PRODUCTOS - INVENTARIO -------- */
 #productos {
   padding-top: 6px;

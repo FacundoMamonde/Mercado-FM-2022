@@ -9,7 +9,7 @@ body {
 #main-container {
   display: block;
   max-width: 1200px;
-  min-width: 500;
+  min-width: 650px;
   margin: auto;
   text-align: center;
 }
@@ -64,7 +64,7 @@ body {
 
 /* -------- LOGO Y  BANNER-------- */
 
-#LOGOBanner {
+#logo-banner {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
@@ -73,12 +73,12 @@ body {
 
 /* -------- LOGO -------- */
 
-#LOGO {
+#logo {
   height: 80px;
   flex-grow: 1;
 }
 
-#LOGO h1 {
+#logo h1 {
   font-family: "Quicksand", sans-serif;
   font-size: 42px;
   padding: 13px;
@@ -89,7 +89,7 @@ body {
   color: rgb(255, 255, 255);
 }
 
-#LOGO span {
+#logo span {
   color: rgba(255, 255, 255, 0.938);
   font-size: 42px;
   filter: drop-shadow(0px 5px 4px #00000069);
@@ -105,19 +105,22 @@ body {
   justify-content: space-between;
   flex-grow: 1;
   background-color: rgba(255, 255, 255, 0.144);
+  max-height: 80px;
 }
 
-#bannerimg {
+#banner-img {
   max-height: 80px;
   max-width: 260px;
 }
 
-#bannertext {
+#banner-text {
+  margin-top: 4px;
   font-style: oblique;
   font-size: 18px;
   text-align: left;
   margin-left: 20px;
   max-width: 198px;
+  max-height: 80px;
 }
 
 /* -------- NAV BAR BOTTOM -------- */
@@ -156,14 +159,30 @@ table {
   justify-content: center;
 }
 
-.sinBullet {
+.sin-bullet {
   list-style-type: none;
 }
 
-.bulletCirculo {
+.bullet-circulo {
   list-style-type: circle;
   margin-left: -20px;
   text-align: left;
+}
+
+/* --- BOTON AGREGAR ARTICULO --- */
+
+#add-item button {
+  border: none;
+  color: white;
+  background-color: rgb(81, 113, 143);
+  border-radius: 6px;
+  margin-bottom: 25px;
+  padding: 10px;
+}
+
+#add-item button:hover {
+  background-color: rgb(84, 138, 189);
+  cursor: pointer;
 }
 
 /* -------- PIE DE PAGINA -------- */

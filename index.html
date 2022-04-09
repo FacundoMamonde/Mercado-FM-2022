@@ -9,32 +9,32 @@
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
 
-  <div id="main-container">
-  <!-- HEADER-->
-  <header>
-    <!-- NAVBAR -->
-      <div id="navbar">
-          <div id="navbar-extra"> <link href=#><span class="material-icons">&#xe54e;</span> ULTIMAS OFERTAS</link>  
-          </div>
-          <div id="navbar-user">
-            $0,00 <link href=#><button><span class="material-icons">&#xe547;</span></button></link>  
-            Admin <link href=#><button><span class="material-icons">&#xe853;</span></button> </link>
-          </div>
-      </div>
-    
-    <!-- LOGO  y BANNER-->
-    <div id="LOGOBanner">
-      <!-- LOGO -->
-      <div id="LOGO"> <h1> <span class="material-icons">&#xe51c;</span> Mercado FM</h1></div>
-      <!-- BANNER -->
-      <div id="banner"> 
-        <h2 id="bannertext"> Los mejores productos,<br> al mejor precio </h2>
-        <img id="bannerimg" src="src/banner5.png" > </img>
-      </div>
-    </div>
-  </header>
-
+  
   <body>
+      <div id="main-container">
+      <!-- HEADER-->
+      <header>
+      <!-- NAVBAR -->
+        <div id="navbar">
+            <div id="navbar-extra"> <link href=#><span class="material-icons">&#xe54e;</span> ULTIMAS OFERTAS</link>  
+            </div>
+            <div id="navbar-user">
+              $0,00 <link href=#><button><span class="material-icons">&#xe547;</span></button></link>  
+              Admin <link href=#><button><span class="material-icons">&#xe853;</span></button> </link>
+            </div>
+        </div>
+      
+      <!-- LOGO  y BANNER-->
+      <div id="logo-banner">
+        <!-- LOGO -->
+        <div id="logo"> <h1> <span class="material-icons">&#xe51c;</span> Mercado FM</h1></div>
+        <!-- BANNER -->
+        <div id="banner"> 
+          <h2 id="banner-text"> Los mejores productos,<br> al mejor precio </h2>
+          <img id="banner-img" src="src/banner5.png" > </img>
+        </div>
+      </div>
+    </header>
     <!-- NAVBAR BOTTOM -->
     <div id="navbar-bottom">
         <p>INICIO</p>
@@ -43,10 +43,10 @@
         <p>CONTACTO</p>
     </div>
     <!-- INVENTARIO -->
-    <div id="Productos">
+    <div id="productos">
     <h3> ~ Productos ~ </h3>
     <div id="inventario">
-      <ul class="bulletCirculo">
+      <ul class="bullet-circulo">
         <li>Agua Mineral</li>
         <li>Yerba Playadito </li>
         <li>Cerealitas </li>
@@ -54,7 +54,7 @@
         <li>Papas Fritas</li> 
         <li>Queso untable </li>
       </ul> 
-      <ul class="sinBullet">
+      <ul class="sin-bullet">
         <li>$120</li>
         <li>$350</li>
         <li>$150</li>
@@ -62,7 +62,7 @@
         <li>$260</li>
         <il>$365</il>
       </ul>
-      <ul class="sinBullet">
+      <ul class="sin-bullet">
         <li>112 unidades</li>
         <li>85 unidades</li>
         <li>62 unidades</li>
@@ -70,6 +70,9 @@
         <li>93 unidades</li>
         <il>36 unidades</il>
         </ul>
+      </div>
+      <div id="add-item">
+      <button id="button-add-item">Agregar articulo</button>
     </div>
   </div>
     <!-- PIE DE PAGINA -->
@@ -77,6 +80,7 @@
       <p>FM Supermercados™ , 2022, todos los derechos reservados </p></footer>
   </div>
   </div>
+  <script src="src/index.ts"></script>
   </body>
   
 </html>

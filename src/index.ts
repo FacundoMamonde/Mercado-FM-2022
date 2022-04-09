@@ -19,7 +19,7 @@ function agregarItem() {
 
   let stockProducto = Number(prompt("Ingrese el stock del producto:"));
   while (comprobarNumero(stockProducto) === false) {
-    precioProducto = Number(prompt("Error: Ingrese el stock del producto:"));
+    stockProducto = Number(prompt("Error: Ingrese el stock del producto:"));
   }
 
   console.log(

@@ -55,7 +55,7 @@ function comprarItem(item: number) {
 /// Funcion mostrar array en el HTML ///////////////////////////////////////
 function mostrarItemHTML() {
   /// Se hace un backup de la informacion previa del Div HTML
-  let itemsBackup = document.getElementById("inventario")?.innerHTML;
+  let itemsBackup: any = "";
   /// Se pone la informacion en el inventario
   for (let i = 0; i < productos.length; i++) {
     document.getElementById("inventario")?.innerHTML =
@@ -75,6 +75,7 @@ function mostrarItemHTML() {
       '<button class="btnComprar" id="' +
       i +
       '">Comprar</button></div>';
+    itemsBackup = document.getElementById("inventario")?.innerHTML;
   }
 }
 

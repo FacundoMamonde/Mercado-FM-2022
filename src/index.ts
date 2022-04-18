@@ -98,8 +98,8 @@ function agregarItem() {
   }
 
   /// Enviar articulo al ARRAY
-  let idProducto = productos.length;
 
+  let idProducto = productos.length;
   productos[idProducto] = [nombreProducto, precioProducto, stockProducto];
 
   mostrarItemHTML();

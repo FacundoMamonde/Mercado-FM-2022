@@ -39,41 +39,6 @@ function cargarInventario() {
   }
 }
 
-/*function comprar() {
-  console.clear();
-  let sumaTotal: number = 0;
-
-  //////
-  for (let i = 0; i < productosNombre.length; i++) {
-    let cant = document.getElementById(`cantidad-id-${i}`);
-    //// Si la cantidad a comprar es correcta, entonces se agrega a la suma
-    if (cant.value <= productosStock[i] && cant.value > 0) {
-      console.log(
-        `Se compraron ${cant.value} unidades de ${productosNombre[i]}`
-      );
-      /// Se suma al Total de la compra
-      sumaTotal = sumaTotal + cant.value * productosPrecio[i];
-      /// Si el valor es cero, no se suma ni se muestra ningun mensaje en consola
-    } else if (cant.value === "0") {
-    }
-    //// Si el valor ingresado es es incorrecto entonces se muestra en consola
-    else {
-      console.log(`Valor de unidades de ${productosNombre[i]} invalido`);
-    }
-  }
-
-
-
-  /// Se ingresa el total de la compra en el HTML
-  let pCompra = document.getElementById("p-compraTotal");
-  pCompra.innerHTML = `Total: $${sumaTotal}`;
-  pCompra?.className = "compraTotal";
-
-  /// Se muestra el total de la compra por consola
-  console.log(`El total de la compra es de $${sumaTotal}`);
-}
-*/
-
 function comprar() {
   console.clear();
   let sumaTotal: number = 0;

@@ -1,7 +1,7 @@
 body {
   font-family: "Quicksand", sans-serif;
-  background-color: rgb(209, 209, 209);
-  margin-top: 0px;
+  background-color: rgb(255, 255, 255);
+  margin-top: -1px;
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -12,9 +12,12 @@ body {
   min-width: 650px;
   margin: auto;
   text-align: center;
+  border: 1px solid grey;
+  border-bottom-left-radius: 21px;
+  border-bottom-right-radius: 21px;
 }
 
-/* -------- NAV BAR -------- */
+/* -------- NAV BAR TOP-------- */
 #navbar {
   font-size: 18px;
   border: none;
@@ -22,7 +25,7 @@ body {
   flex-direction: row;
   margin: 0px;
   justify-content: space-between;
-  background-color: rgba(255, 255, 255, 0.486);
+  background-color: rgb(219, 219, 219);
   padding: 10px;
   border-bottom: rgba(0, 0, 0, 0.403) solid 1px;
 }
@@ -35,22 +38,6 @@ body {
 #navbar-user {
   width: 400px;
   text-align: right;
-  cursor: pointer;
-}
-
-#navbar-extra:hover {
-  color: rgb(2, 89, 129);
-  cursor: pointer;
-  text-decoration: underline;
-  text-shadow: 0px 0px 4px #00000069;
-}
-
-#navbar-extra span {
-  vertical-align: top;
-}
-
-#nombre {
-  padding-right: 3px;
 }
 
 #navbar button {
@@ -58,12 +45,7 @@ body {
   color: inherit;
   border: none;
   padding: 0;
-  cursor: pointer;
   vertical-align: top;
-}
-
-#navbar button:hover {
-  color: grey;
 }
 
 /* -------- LOGO Y  BANNER-------- */
@@ -133,19 +115,44 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(233, 233, 233);
+  border-bottom: 1px solid rgb(82, 82, 82);
 }
 
-#navbar-bottom p:hover {
+#navbar-bottom a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#navbar-bottom li {
+  list-style-type: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#navbar-bottom li:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
 /* -------- PRODUCTOS - INVENTARIO -------- */
 #productos {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  background-color: rgba(128, 128, 128, 0.144);
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background-color: rgb(233, 233, 233);
+  background-image: url("./src/background-comprar.svg");
+  /*background-color: rgba(128, 128, 128, 0.144);*/
+}
+
+#productos h3 {
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  width: 280px;
+  margin-bottom: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 h3 {
@@ -165,11 +172,10 @@ table {
   flex-wrap: wrap;
 }
 
-/* El producto individual */
-.div-productos {
-  width: 130px;
+.producto-box {
+  width: 140px;
   border: 1px solid rgb(112, 112, 112);
-  background-color: rgb(219, 219, 219);
+  background-color: rgb(255, 255, 255);
   padding-left: 20px;
   padding-right: 20px;
   border-radius: 10px;
@@ -178,48 +184,49 @@ table {
   margin-bottom: 15px;
 }
 
-#inventario button {
-  margin-bottom: 10px;
-  cursor: pointer;
+.producto-box input {
+  height: 25px;
+  width: 50px;
 }
 
-.div-unidad {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+.producto-box p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  height: 45px;
+}
+
+.producto-box h4 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+  font-weight: 500;
+}
+
+.producto-box h5 {
+  margin-top: 10px;
   font-size: 13px;
-  padding: 0px;
-  margin-top: -20px;
-  margin-bottom: -40px;
 }
 
-.div-precio {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  font-size: 30px;
-  padding: 0px;
-  margin-top: -20px;
-  margin-bottom: -20px;
-}
-
-/* ---- */
-
-/* --- BOTON AGREGAR ARTICULO --- */
-
-#add-item button {
-  border: none;
-  color: white;
-  background-color: rgb(81, 113, 143);
-  border-radius: 6px;
-  margin-top: 15px;
-  margin-bottom: 25px;
-  padding: 10px;
-}
-
-#add-item button:hover {
-  background-color: rgb(84, 138, 189);
+#div-comprar button {
+  margin-top: 20px;
+  margin-bottom: 20px;
   cursor: pointer;
+  padding: 15px;
+  border: none;
+  background-color: rgb(66, 99, 160);
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+}
+
+.compraTotal {
+  font-size: 23px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  padding: 15px;
+  width: 280px;
+  margin-bottom: 10px;
 }
 
 /* -------- PIE DE PAGINA -------- */
@@ -233,10 +240,122 @@ table {
   background-color: rgb(81, 113, 143);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  border-top: 1px solid rgb(82, 82, 82);
 }
 
 #pie p + p {
   margin-top: -10px;
 }
 
-/* -------- EXTRAS -------- */
+/* -------- INICIO -------- */
+
+#inicio {
+  background-color: rgb(255, 255, 255);
+  background-image: url("./src/background.jpg");
+  height: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
+  padding-top: 60px;
+  padding-left: 30px;
+}
+
+#inicio-texto {
+  position: relative;
+  padding: 50px;
+  padding-top: 30px;
+  padding-bottom: 70px;
+  background-color: white;
+  width: 470px;
+}
+
+/* ------ Consulta ------- */
+#contacto {
+  background-color: rgb(151, 151, 151);
+  background-image: url("./src/background-contacto.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: initial;
+  opacity: 0.85;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+#div-consultas {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: rgba(255, 255, 255, 0.925);
+  width: 600px;
+}
+
+#div-consultas input {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#div-consultas p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#div-consultas p,
+input,
+textarea,
+button {
+  font-family: "Quicksand", sans-serif;
+}
+
+#input-nombre,
+#input-apellido {
+  width: 200px;
+}
+
+#input-mail {
+  width: 300px;
+}
+
+#textarea-consulta {
+  text-align: left;
+  text-justify: none;
+  text-orientation: left;
+  min-width: 400px;
+  max-width: 90%;
+  height: 150px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+#boton-enviar {
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  width: 200px;
+  cursor: pointer;
+  padding: 15px;
+  border: none;
+  background-color: rgb(66, 99, 160);
+  border-radius: 5px;
+  color: white;
+}
+
+#boton-enviar:hover {
+  background-color: rgb(88, 120, 180);
+}
+
+#envio-test {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.envioFail {
+  color: red;
+}
+
+.envioOk {
+  color: green;
+}

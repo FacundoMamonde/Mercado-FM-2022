@@ -80,9 +80,60 @@ function comprar() {
 let btnComprar = document.getElementById("button-comprar");
 btnComprar?.addEventListener("click", comprar);
 
-//////// EXTRA
+////////////// EXTRA ///////////////////
 
 window.onload = cargarInventario();
 
 var userName = "Admin";
 document.getElementById("nombre")?.innerHTML = userName;
+
+//////// FUNCION PARA AGREGAR ARTICULOS ////////////////////
+
+function comprobarNumero(n: number): boolean {
+  if (isNaN(n) || n < 1) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+let inputNuevoNombre = document.getElementById("input-agregar-nombre");
+let inputNuevoPrecio = document.getElementById("input-agregar-precio");
+let inputNuevoStock = document.getElementById("input-agregar-stock");
+
+function agregarProducto() {
+  let errCount: number = 0;
+  let pError = document.getElementById("p-agregar-item-error");
+
+  if (inputNuevoNombre.value === "" || inputNuevoNombre.value.length > 18) {
+    errCount++;
+  }
+  if (isNaN(inputNuevoPrecio.value) || Number(inputNuevoPrecio.value) < 1) {
+    errCount++;
+  }
+  if (isNaN(inputNuevoStock.value) || Number(inputNuevoStock.value) < 1) {
+    errCount++;
+  }
+
+  if (errCount === 0) {
+    productosNombre[productosNombre.length] = inputNuevoNombre.value;
+    productosPrecio[productosNombre.length - 1] = inputNuevoPrecio.value;
+    productosStock[productosNombre.length - 1] = inputNuevoStock.value;
+    productosContenedor?.innerHTML = "";
+    cargarInventario();
+    pError?.className = "oculto";
+    inputNuevoNombre.value = "";
+    inputNuevoPrecio.value = "";
+    inputNuevoStock.value = "";
+  } else {
+    pError?.className = "";
+  }
+}
+
+let btnNuevoAgregar = document.getElementById("btn-agregar-ok");
+btnNuevoAgregar?.addEventListener("click", agregarProducto);
+
+let btnAgregarProducto = document.getElementById("button-agregar");
+btnAgregarProducto?.addEventListener("click", function () {
+  document.getElementById("div-agregar-item").classList.toggle("oculto");
+});

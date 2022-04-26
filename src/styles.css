@@ -219,15 +219,30 @@ table {
   cursor: pointer;
   padding: 15px;
   border: none;
-  background-color: rgb(66, 99, 160);
   border-radius: 5px;
   color: white;
   font-size: 15px;
 }
 
+#button-comprar {
+  background-color: rgb(66, 99, 160);
+}
+#button-comprar:hover {
+  background-color: rgb(76, 112, 179);
+}
+
+#button-agregar {
+  background-color: rgb(0, 189, 79);
+}
+
+#button-agregar:hover {
+  background-color: rgb(10, 194, 86);
+}
+
 .compraTotal {
   font-size: 23px;
   margin: auto;
+  margin-top: 10px;
   background-color: rgb(255, 255, 255);
   padding: 15px;
   width: 280px;
@@ -237,6 +252,7 @@ table {
 .compraTotalError {
   font-size: 23px;
   margin: auto;
+  margin-top: 10px;
   background-color: rgb(255, 255, 255);
   color: red;
   padding: 15px;
@@ -375,4 +391,35 @@ button {
 
 .envioOk {
   color: green;
+}
+
+/* -------- EXTRA ----------- */
+#div-agregar-item {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 200px;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+
+#input-agregar-precio,
+#input-agregar-stock {
+  width: 100px;
+}
+
+#btn-agregar-ok {
+  background-color: cadetblue;
+  margin: auto;
+  width: 100px;
+}
+
+.oculto {
+  display: none;
+  visibility: hidden;
+  height: 0px;
 }

@@ -17,60 +17,24 @@ body {
   border-bottom-right-radius: 21px;
 }
 
-/* -------- NAV BAR TOP-------- */
-#navbar {
-  font-size: 18px;
-  border: none;
-  display: flex;
-  flex-direction: row;
-  margin: 0px;
-  justify-content: space-between;
-  background-color: rgb(219, 219, 219);
-  padding: 10px;
-  border-bottom: rgba(0, 0, 0, 0.403) solid 1px;
-}
-
-#navbar-extra {
-  width: 190px;
-  display: block;
-}
-
-#navbar-user {
-  width: 400px;
-  text-align: right;
-}
-
-#navbar button {
-  background: none;
-  color: inherit;
-  border: none;
-  padding: 0;
-  vertical-align: top;
-}
-
-/* -------- LOGO Y  BANNER-------- */
-
-#logo-banner {
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%;
-  background-color: rgb(35, 154, 223);
-}
-
 /* -------- LOGO -------- */
 
 #logo {
-  height: 80px;
-  flex-grow: 1;
+  height: 100px;
+  width: 100%;
+
+  background-color: rgb(71, 111, 170);
 }
 
 #logo h1 {
   font-family: "Quicksand", sans-serif;
+  text-align: center;
   font-size: 42px;
   padding: 13px;
+  margin: auto;
   margin-top: 0px;
   margin-bottom: 0px;
-  text-align: center;
+  padding-top: 30px;
   min-width: 480px;
   color: rgb(255, 255, 255);
 }
@@ -80,33 +44,6 @@ body {
   font-size: 42px;
   filter: drop-shadow(0px 5px 4px #00000069);
   vertical-align: -5px;
-}
-
-/* -------- BANNER -------- */
-
-#banner {
-  display: flex;
-  flex-direction: row;
-  margin: 0px;
-  justify-content: space-between;
-  flex-grow: 1;
-  background-color: rgba(255, 255, 255, 0.144);
-  max-height: 80px;
-}
-
-#banner-img {
-  max-height: 80px;
-  max-width: 260px;
-}
-
-#banner-text {
-  margin-top: 4px;
-  font-style: oblique;
-  font-size: 18px;
-  text-align: left;
-  margin-left: 20px;
-  max-width: 198px;
-  max-height: 80px;
 }
 
 /* -------- NAV BAR BOTTOM -------- */

@@ -89,14 +89,6 @@ document.getElementById("nombre")?.innerHTML = userName;
 
 //////// FUNCION PARA AGREGAR ARTICULOS ////////////////////
 
-function comprobarNumero(n: number): boolean {
-  if (isNaN(n) || n < 1) {
-    return false;
-  } else {
-    return true;
-  }
-}
-
 let inputNuevoNombre = document.getElementById("input-agregar-nombre");
 let inputNuevoPrecio = document.getElementById("input-agregar-precio");
 let inputNuevoStock = document.getElementById("input-agregar-stock");

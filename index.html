@@ -2,21 +2,16 @@
   <head>
     <title>Mercado FM</title>
     <meta charset="UTF-8" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
 
+  
   <body>
-    <div id="main-container">
+      <div id="main-container">
       <!-- HEADER-->
       <header>
         <!-- NAVBAR -->
@@ -28,42 +23,40 @@
           </div>
         </div>
       </header>
-      <!-- NAVBAR BOTTOM -->
-      <div id="navbar-bottom">
-        <li class="pag-seleccionado"><a href="/index.html"> INICIO </a></li>
-        <li><a href="/comprar.html"> COMPRAR </a></li>
-        <li><a href="/contacto.html"> CONTACTO </a></li>
-      </div>
-      <!-- INICIO DE PAGINA -->
-      <div id="inicio">
-        <div id="inicio-texto">
-          <h1>Bienvenido!</h1>
-          <p2
-            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
-            possimus hic expedita magni ad autem temporibus distinctio natus
-            accusantium, odit omnis et nihil velit itaque alias esse, doloremque
-            libero eveniet.</p2
-          >
-          <p2
-            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-            debitis sapiente animi natus ducimus aliquam quibusdam, accusamus
-            excepturi dignissimos ratione commodi suscipit at ullam laudantium
-            eius quas dolorum aperiam deserunt!</p2
-          >
-          <p2
-            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            quia earum vitae dolorum dolore eveniet eos error quo ex rerum velit
-            nisi libero nulla corrupti distinctio ipsam, deleniti fuga vel.</p2
-          >
-        </div>
-      </div>
-      <!-- PIE DE PAGINA -->
-      <footer id="pie">
-        <p>7163, General Juan Madariaga, Buenos Aires</p>
-        <p>FM Supermercados™ , 2022, todos los derechos reservados</p>
-      </footer>
+    <!-- NAVBAR BOTTOM -->
+    <div id="navbar-bottom">
+        <li> <a href="./index.html"> INICIO </a> </li>
+        <li class="pag-seleccionado"> <a href="./comprar.html"> COMPRAR </a> </li>
+        <li> <a href="./contacto.html"> CONTACTO </a> </li>
     </div>
+    <!-- INVENTARIO -->
+    <div id="productos">
+    <h3> ~ Compra de productos ~ </h3>
+    <div id="inventario">
+    
+    
 
-    <script src="src/index.ts"></script>
+
+    </div>
+    <div id="div-comprar">
+    <button id="button-comprar">Comprar</button> <button id="button-agregar">Agregar Item</button>
+    <div id="div-agregar-item" class="oculto"> 
+      <input id="input-agregar-nombre" placeholder="Nombre del producto"></input>  <span class="validity"></span>
+      <input id="input-agregar-precio" type="number" min="0" placeholder="Precio"></input>
+      <input id="input-agregar-stock" type="number" min="0" placeholder="Stock" ></input>
+      <button id="btn-agregar-ok">Agregar</button>
+      <p id=p-agregar-item-error class="oculto">Ocurrio un error, vuelva a revisar los campos </p>
+    </div>
+    <p id="p-compraTotal"></p>
+    </div>
+  </div>
+    <!-- PIE DE PAGINA -->
+    <footer id="pie"> <p>7163, General Juan Madariaga, Buenos Aires</p>
+      <p>FM Supermercados™ , 2022, todos los derechos reservados </p>
+    </footer></div>
+
+  </div>
+  <script src="src/index.ts"> </script>
   </body>
 </html>
+

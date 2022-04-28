@@ -9,8 +9,19 @@ let productosNombre: string[] = [
   "Gaseosa",
   "Queso untable"
 ];
-let productosPrecio: number[] = [400, 200, 150, 112, 190, 300, 250, 80, 250];
+let productosPrecio: number[] = [400, 200, 150, 112, 190, 300, 250, 250, 250];
 let productosStock: number[] = [20, 35, 26, 52, 65, 15, 6, 60, 15];
+let productosImg: string[] = [
+  "./src/Productos/Yerba.png",
+  "./src/Productos/Agua.png",
+  "./src/Productos/Galletitas.png",
+  "./src/Productos/Alfajor.png",
+  "./src/Productos/Leche.png",
+  "./src/Productos/Arroz.png",
+  "./src/Productos/Fideos-Tirabuzon.png",
+  "./src/Productos/Gaseosa.png",
+  "./src/Productos/Queso-Untable.png"
+];
 
 let productosContenedor = document.getElementById("inventario");
 
@@ -19,6 +30,9 @@ function cargarInventario() {
     let productoDiv = document.createElement("div");
     productoDiv.classList.add("producto-box");
     productoDiv.id = `producto-id-${i}`;
+    let productoIMG = document.createElement("img");
+    productoIMG.classList.add("producto-img");
+    productoIMG.src = productosImg[i];
     let productoNombre = document.createElement("p");
     productoNombre.innerHTML = productosNombre[i];
     let productoPrecio = document.createElement("h4");
@@ -31,6 +45,7 @@ function cargarInventario() {
     productoStock.value = "0";
     let productoStockText = document.createElement("h5");
     productoStockText.innerHTML = `(${productosStock[i]} unidades)`;
+    productoDiv.appendChild(productoIMG);
     productoDiv.appendChild(productoNombre);
     productoDiv.appendChild(productoPrecio);
     productoDiv.appendChild(productoStock);
@@ -111,6 +126,7 @@ function agregarProducto() {
     productosNombre[productosNombre.length] = inputNuevoNombre.value;
     productosPrecio[productosNombre.length - 1] = inputNuevoPrecio.value;
     productosStock[productosNombre.length - 1] = inputNuevoStock.value;
+    productosImg[productosNombre.length - 1] = "./src/Productos/Nuevo.png";
     productosContenedor?.innerHTML = "";
     cargarInventario();
     pError?.className = "oculto";

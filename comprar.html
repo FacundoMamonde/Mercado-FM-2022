@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Mercado FM</title>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  
+  <body>
+      <div id="main-container">
+      <!-- HEADER-->
+      <header>
+        <!-- NAVBAR -->
+
+        <!-- LOGO -->
+        <div id="logo">
+          <div>
+            <h1><span class="material-icons">&#xe51c;</span> Mercado FM</h1>
+          </div>
+        </div>
+      </header>
+    <!-- NAVBAR BOTTOM -->
+    <div id="navbar-bottom">
+        <li> <a href="./index.html"> INICIO </a> </li>
+        <li class="pag-seleccionado"> <a href="./comprar.html"> COMPRAR </a> </li>
+        <li> <a href="./contacto.html"> CONTACTO </a> </li>
+    </div>
+    <!-- INVENTARIO -->
+    <div id="productos">
+    <h3> ~ Compra de productos ~ </h3>
+    <div id="inventario">
+    
+    
+
+
+    </div>
+    <div id="div-comprar">
+    <button id="button-comprar">Comprar</button> <button id="button-agregar">Agregar Item</button>
+    <div id="div-agregar-item" class="oculto"> 
+      <input id="input-agregar-nombre" placeholder="Nombre del producto"></input>  <span class="validity"></span>
+      <input id="input-agregar-precio" type="number" min="0" placeholder="Precio"></input>
+      <input id="input-agregar-stock" type="number" min="0" placeholder="Stock" ></input>
+      <button id="btn-agregar-ok">Agregar</button>
+      <p id=p-agregar-item-error class="oculto">Ocurrio un error, vuelva a revisar los campos </p>
+    </div>
+    <p id="p-compraTotal"></p>
+    </div>
+  </div>
+    <!-- PIE DE PAGINA -->
+    <footer id="pie"> <p>7163, General Juan Madariaga, Buenos Aires</p>
+      <p>FM Supermercados™ , 2022, todos los derechos reservados </p>
+    </footer></div>
+
+  </div>
+  <script src="src/index.ts"> </script>
+  </body>
+</html>
+

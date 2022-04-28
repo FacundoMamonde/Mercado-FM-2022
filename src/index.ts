@@ -71,7 +71,9 @@ function comprar() {
     }
     //// Si el valor ingresado es es incorrecto entonces se muestra en consola
     else {
-      console.log(`Unidades de ${productosNombre[i]} invalida`);
+      console.log(
+        `Unidades de ${productosNombre[i]} invalida (${productosStock[i]})`
+      );
       errorDetec++;
     }
   }
@@ -124,8 +126,10 @@ function agregarProducto() {
 
   if (errCount === 0) {
     productosNombre[productosNombre.length] = inputNuevoNombre.value;
-    productosPrecio[productosNombre.length - 1] = inputNuevoPrecio.value;
-    productosStock[productosNombre.length - 1] = inputNuevoStock.value;
+    productosPrecio[productosNombre.length - 1] = Number(
+      inputNuevoPrecio.value
+    );
+    productosStock[productosNombre.length - 1] = Number(inputNuevoStock.value);
     productosImg[productosNombre.length - 1] = "./src/Productos/Nuevo.png";
     productosContenedor?.innerHTML = "";
     cargarInventario();

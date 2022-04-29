@@ -101,9 +101,6 @@ btnComprar?.addEventListener("click", comprar);
 
 window.onload = cargarInventario();
 
-var userName = "Admin";
-document.getElementById("nombre")?.innerHTML = userName;
-
 //////// FUNCION PARA AGREGAR ARTICULOS ////////////////////
 
 let inputNuevoNombre = document.getElementById("input-agregar-nombre");
